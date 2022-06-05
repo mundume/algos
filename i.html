@@ -107,7 +107,35 @@
 
     console.log(radius.map(area))
 
-    
-   
+    //filter, map() , reduce
+
+    const arr = [
+        {
+            name: "John",
+            age: 30
+        },
+        {
+            name: "Mike",
+            age: 23
+        },
+        {
+            name: "Jane",
+            age: 40
+        },
+        {
+            name: "Mary",
+            age: 28
+        }
+    ]
+   const output = arr.reduce(function(acc, current){
+    if (acc[current.age]){
+        acc[current.age]= ++acc[current.age]
+    }else{
+        acc[current.age]=1
+    }
+    return acc
+   },{})
+   console.log(output)
+  
 </script>
 </html>
