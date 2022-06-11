@@ -136,6 +136,18 @@
     return acc
    },{})
    console.log(output)
+
+   //closure
+   function x (){
+    var a = 14
+    function y(){
+        console.log(a)
+    }
+    return y
+
+    }
+    var z = x() 
+    z()
   
 </script>
 </html>
